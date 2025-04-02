@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-02T14:06:37.443646" rpa="false" schemaversion="5">
+<suite id="s1" name="miniProject" source="C:\QA_Projects\Robot_web\miniProject.robot">
+<test id="s1-t1" name="Fill out the form" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-02T14:06:37.566949" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com'.</msg>
+<arg>https://testautomationpractice.blogspot.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-02T14:06:37.566795" elapsed="2.643763"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-02T14:06:40.211117" level="INFO">Typing text 'Noesis Academy' into text field '//input[@id="name"]'.</msg>
+<arg>//input[@id="name"]</arg>
+<arg>Noesis Academy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-02T14:06:40.210867" elapsed="0.119260"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-02T14:06:40.330512" level="INFO">Typing text 'noesis@academy.pt' into text field '//input[@id="email"]'.</msg>
+<arg>//input[@id="email"]</arg>
+<arg>noesis@academy.pt</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-02T14:06:40.330362" elapsed="0.098930"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-02T14:06:40.429690" level="INFO">Typing text '911111111' into text field '//input[@id="phone"]'.</msg>
+<arg>//input[@id="phone"]</arg>
+<arg>911111111</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-02T14:06:40.429545" elapsed="0.106081"/>
+</kw>
+<status status="PASS" start="2025-04-02T14:06:37.566266" elapsed="2.969611"/>
+</test>
+<status status="PASS" start="2025-04-02T14:06:37.444409" elapsed="3.091917"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="miniProject" id="s1" pass="1" fail="0" skip="0">miniProject</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
