@@ -37,7 +37,7 @@ Open App
 
 *** Test Cases ***
 Fill Form
-    [Tags]  formulario
+    [Tags]  form
      Open Browser   https://testautomationpractice.blogspot.com/   chrome
      Input Text     xpath=//input[@id="name"]          Noesis Academy                #Name
      Input Text     xpath=//input[@id="email"]         Noesis@Academy.pt             #Email
