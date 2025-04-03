@@ -64,12 +64,12 @@ Fill Form
      Input Text     //input[@id="end-date"]        03/22/2020    #Date Picker 3 (Data Fim)
 
      Click Button   //button[@class="submit-btn"]                #Date Picker 3  (Clicar no Submit)   
-     ${result}   Get Text   //div[@id="result"]                  #Date Picker 3   (Pegar o texto gerado)
+     ${result}   Get Text   //div[@id="result"]                  #Date Picker 3   (texto gerado)
 
      ${num_dias}    Validate Difference Between Dates   2020/03/12  2020/03/22    #Validar se a diferenca da data no texto é igual das diferenças das datas
      Should Contain    ${result}    ${num_dias}                               #Validar se a diferenca da data no texto é igual das diferenças das datas
 
-     # Pegar da data corrente do sistema
+     # data corrente do sistema
      ${TODAY}      Get Current Date            result_format=%m/%d/%Y
      
       Choose File   //input[@id="singleFileInput"]    ${EXECDIR}\\Solidario.png    # Upload de ficheiro
@@ -90,11 +90,11 @@ Delete a product from the basket
      Click Button    //button[@id="add-to-cart-sauce-labs-bike-light"]   #Adiciona o item ao carrinho
      Click Link      //a[@data-test="shopping-cart-link"]                #Entra no carrinho 
 
-     ${existe_item}  Run Keyword And Return Status    Page Should Contain Element   xpath=//div[@data-test="inventory-item"]    #Valida se o item esta no carrinho
+     ${exist_item}  Run Keyword And Return Status    Page Should Contain Element   xpath=//div[@data-test="inventory-item"]    #Valida se o item esta no carrinho
 
-     WHILE  ${existe_item}    # Loop = Enquando existir item no carrinho ele ira apagar o primeiro item
+     WHILE  ${exist_item}    # Loop = Enquando existir item no carrinho ele ira apagar o primeiro item
         Click Element    //div[@data-test="inventory-item"][1]//button   #Exclui o item no carrinho
-        ${existe_item}  Run Keyword And Return Status    Page Should Contain Element   xpath=//div[@data-test="inventory-item"]   #Valida se o item esta no carrinho
+        ${exist_item}  Run Keyword And Return Status    Page Should Contain Element   xpath=//div[@data-test="inventory-item"]   #Valida se o item esta no carrinho
      END 
 
 
