@@ -41,7 +41,7 @@ Fill Form
      Open Browser   https://testautomationpractice.blogspot.com/   chrome
      Input Text     xpath=//input[@id="name"]          Noesis Academy                #Name
      Input Text     xpath=//input[@id="email"]         Noesis@Academy.pt             #Email
-     Input Text     xpath=//input[@id="phone"]         910666555                     #Phone
+     Input Text     xpath=//input[@id="phone"]         911111111                     #Phone
      Input Text     xpath=//textarea[@id="textarea"]   AVENIDA MARCOS PORTUGAL       #Address
 
      Select Radio Button   gender  female    #Gender
@@ -76,7 +76,7 @@ Fill Form
 
 
 Add a product to the basket
-     [Tags]  add_carrinho
+     [Tags]  add_basket
      Open App
      Click Button    //button[@id="add-to-cart-sauce-labs-backpack"]   #Adiciona o item ao carrinho
      Click Link      //a[@data-test="shopping-cart-link"]              #Entra no carrinho   
@@ -84,7 +84,7 @@ Add a product to the basket
 
 
 Delete a product from the basket
-     [Tags]  delete_carrinho
+     [Tags]  delete_basket
      Open App
      Click Button    //button[@id="add-to-cart-sauce-labs-backpack"]     #Adiciona o item ao carrinho
      Click Button    //button[@id="add-to-cart-sauce-labs-bike-light"]   #Adiciona o item ao carrinho
